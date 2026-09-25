@@ -19,12 +19,12 @@ repositories {
 }
 
 dependencies {
-    compileOnly("io.papermc.paper:paper-api:1.21.11-R0.1-SNAPSHOT")
-    compileOnly(files("../VineriumLib/build/libs/VineriumLib-1.0-SNAPSHOT.jar"))
+    compileOnly("io.papermc.paper:paper-api:26.2+")
+    compileOnly(files("../AsureLib/build/libs/AsureLib-1.0-SNAPSHOT.jar"))
 
     compileOnly("com.github.MilkBowl:VaultAPI:1.7.1")
     compileOnly("com.github.Zrips:CMI-API:9.8.6.4")
-    compileOnly("io.lumine:Mythic-Dist:5.13.0-SNAPSHOT")
+    compileOnly("io.lumine:Mythic-Dist:5.+")
     compileOnly("me.clip:placeholderapi:2.11.6") // repo.extendedclip.com
     compileOnly("com.dre.brewery:BreweryX:3.7.0")
 
@@ -51,11 +51,11 @@ tasks.withType<Jar> {
 
 }
 java {
-    toolchain.languageVersion.set(JavaLanguageVersion.of(21))
+    toolchain.languageVersion.set(JavaLanguageVersion.of(25))
 }
 
 kotlin {
-    jvmToolchain(21)
+    jvmToolchain(25)
 }
 
 tasks.test {

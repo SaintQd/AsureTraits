@@ -1,11 +1,11 @@
-name: VineriumTraits
+name: AsureTraits
 version: 1.0
 author: SaintQd
-main: org.saintqd.vineriumtraits.VineriumTraits
-api-version: 1.21.11
-depend: [VineriumLib]
+main: org.saintqd.asuretraits.AsureTraits
+api-version: 26.2
+depend: [AsureLib]
 softdepend: [MythicMobs, Vault, BreweryX, CMI]
 permissions:
-  vineriumtraits.admin:
+  asuretraits.admin:
     description: Access to admin commands.
     default: op
